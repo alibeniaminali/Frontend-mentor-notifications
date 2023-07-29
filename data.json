@@ -1,0 +1,66 @@
+[
+  {
+    "firstName": "Mark",
+    "secondName": "Webber",
+    "notificationType": "reacted to your recent post",
+    "image": "./assets/images/avatar-mark-webber.webp",
+    "group": "My first tournament today!",
+    "read": false,
+    "timestamp": "1m ago"
+    
+  },
+  {
+    "firstName": "Angela",
+    "secondName": "Gray",
+    "notificationType": "followed you",
+    "image": "./assets/images/avatar-angela-gray.webp",
+    "group": "",
+    "read": false,
+    "timestamp": "5m ago"
+  },
+  {
+    "firstName": "Jacob",
+    "secondName": "Thompson",
+    "notificationType": "has joined your group",
+    "image": "./assets/images/avatar-jacob-thompson.webp",
+    "group": "Chess Club",
+    "read": false,
+    "timestamp": "1 day ago"
+  },
+  {
+    "firstName": "Rizky",
+    "secondName": "Hasanuddin",
+    "notificationType": "sent you a private message",
+    "image": "./assets/images/avatar-rizky-hasanuddin.webp",
+    "group": "",
+    "read": true,
+    "timestamp": "5 days ago"
+  },
+  {
+    "firstName": "Kimberly",
+    "secondName": "Smith",
+    "notificationType": "commented on your picture",
+    "image": "./assets/images/avatar-kimberly-smith.webp",
+    "group": "",
+    "read": true,
+    "timestamp": "1 week ago"
+  },
+  {
+    "firstName": "Nathan",
+    "secondName": "Peterson",
+    "notificationType": "reacted to your recent post",
+    "image": "./assets/images/avatar-nathan-peterson.webp",
+    "group": "5 end-game strategies to increase your win rate",
+    "read": true,
+    "timestamp": "2 weeks ago"
+  },
+  {
+    "firstName": "Anna",
+    "secondName": "Kim",
+    "notificationType": "left the group",
+    "image": "./assets/images/avatar-anna-kim.webp",
+    "group": "Chess Club",
+    "read": true,
+    "timestamp": "2 weeks ago"
+  }
+]
