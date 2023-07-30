@@ -35,7 +35,7 @@ Users should be able to:
 Additional functionality and styling that I've added :
 - The users can toggle the message to view it, when they click on the person who send it
 - The message border has a little corner on the top to appear like a tooltip
-- Most of the content is not hard coded inside the HMTL, instead I created a data.json file and dynamically added the content
+- Most of the content is not hard coded inside the HMTL, instead I created a data.js file and dynamically added the content
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/html-css-grid-javascript-json-TlJQH5xI89)
@@ -56,7 +56,7 @@ Additional functionality and styling that I've added :
 ### What I learned
 
 1. Practiced DOM manipulation, styling with CSS and JavaScript
-2. Practiced working with json files and conditional rendering
+2. Practiced working with json like file structure
 
 ### Continued development
 
