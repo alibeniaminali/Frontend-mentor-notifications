@@ -17,7 +17,7 @@ function init() {
           <div>
             <a href="#" class="user-name pr">${item.firstName} ${item.secondName}</a> 
             <span class="notification-type pr">${item.action}</span> 
-            <a href="#" class="group pr">${item.group ? item.group : ''}</a> 
+            ${item.group ? `<a href="#" class="group pr">${item.group}</a>` : ''}
             <span class="${!item.read ? 'unread' : ''}"></span>
           </div>
           <p class="timestamp">${item.timestamp}</p>
