@@ -44,8 +44,6 @@ Additional functionality and styling that I've added :
 
 ## My process
 
-The component renders with a disabled submit input. Once the user has selected a rating, the disabled attribute is removed and the user is able to submit their rating. 
-
 ### Built with
 
 - Semantic HTML5 markup
