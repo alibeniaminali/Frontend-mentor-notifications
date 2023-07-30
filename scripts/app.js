@@ -1,4 +1,4 @@
-import data from '../data.json' assert { type: 'json' }
+import data from '../data.js'
 
 function init() {
   const notificationsContent = document.querySelector('.notifications__content')
@@ -23,7 +23,9 @@ function init() {
       item.secondName
     }</a> 
                 <span class="notification-type pr">${item.action}</span> 
-                <a href="#" class="group pr">${item.group ? item.group : ''}</a> 
+                <a href="#" class="group pr">${
+                  item.group ? item.group : ''
+                }</a> 
                 <span class="${!item.read ? 'unread' : ''}"></span>
             </div>
             <p class="timestamp">${item.timestamp}</p>

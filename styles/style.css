@@ -206,7 +206,7 @@ button:hover {
 @media only screen and (min-width: 700px) {
   body {
     background-color: var(--very-light-grayish-blue);
-    height: 100vh;
+    margin-top: 10px;
   }
 
   main {
