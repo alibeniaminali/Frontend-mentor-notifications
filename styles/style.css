@@ -44,7 +44,7 @@ a:hover {
 }
 
 body {
-  width: 100vw;
+  /* width: 100vw; */
   /* height: 100%; */
   display: flex;
   align-items: center;
@@ -110,6 +110,7 @@ button:hover {
   border-radius: 10px;
   display: flex;
   gap: 15px;
+  cursor: pointer;
   /* justify-content: center; */
   /* width: 100%; */
   /* align-items: center; */
@@ -150,4 +151,16 @@ button:hover {
 
 .timestamp {
   color: var(--grayish-blue);
+}
+
+.message {
+    margin-top: 5px;
+    border: 1px solid var(--light-grayish-blue-1);
+    border-radius: 5px;
+    padding: 15px;
+    color: var(--very-dark-blue-lighter);
+}
+
+.hidden {
+    display: none;
 }

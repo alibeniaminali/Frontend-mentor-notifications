@@ -14,7 +14,6 @@
     "secondName": "Gray",
     "notificationType": "followed you",
     "image": "./assets/images/avatar-angela-gray.webp",
-    "group": "",
     "read": false,
     "timestamp": "5m ago"
   },
@@ -32,7 +31,7 @@
     "secondName": "Hasanuddin",
     "notificationType": "sent you a private message",
     "image": "./assets/images/avatar-rizky-hasanuddin.webp",
-    "group": "",
+    "message": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
     "read": true,
     "timestamp": "5 days ago"
   },
@@ -41,7 +40,6 @@
     "secondName": "Smith",
     "notificationType": "commented on your picture",
     "image": "./assets/images/avatar-kimberly-smith.webp",
-    "group": "",
     "read": true,
     "timestamp": "1 week ago"
   },
