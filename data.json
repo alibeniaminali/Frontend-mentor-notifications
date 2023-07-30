@@ -2,17 +2,16 @@
   {
     "firstName": "Mark",
     "secondName": "Webber",
-    "notificationType": "reacted to your recent post",
+    "action": "reacted to your recent post",
     "image": "./assets/images/avatar-mark-webber.webp",
     "group": "My first tournament today!",
     "read": false,
     "timestamp": "1m ago"
-    
   },
   {
     "firstName": "Angela",
     "secondName": "Gray",
-    "notificationType": "followed you",
+    "action": "followed you",
     "image": "./assets/images/avatar-angela-gray.webp",
     "read": false,
     "timestamp": "5m ago"
@@ -20,7 +19,7 @@
   {
     "firstName": "Jacob",
     "secondName": "Thompson",
-    "notificationType": "has joined your group",
+    "action": "has joined your group",
     "image": "./assets/images/avatar-jacob-thompson.webp",
     "group": "Chess Club",
     "read": false,
@@ -29,7 +28,7 @@
   {
     "firstName": "Rizky",
     "secondName": "Hasanuddin",
-    "notificationType": "sent you a private message",
+    "action": "sent you a private message",
     "image": "./assets/images/avatar-rizky-hasanuddin.webp",
     "message": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
     "read": true,
@@ -38,15 +37,16 @@
   {
     "firstName": "Kimberly",
     "secondName": "Smith",
-    "notificationType": "commented on your picture",
+    "action": "commented on your picture",
     "image": "./assets/images/avatar-kimberly-smith.webp",
     "read": true,
-    "timestamp": "1 week ago"
+    "timestamp": "1 week ago",
+    "actionPicture": "./assets/images/image-chess.webp"
   },
   {
     "firstName": "Nathan",
     "secondName": "Peterson",
-    "notificationType": "reacted to your recent post",
+    "action": "reacted to your recent post",
     "image": "./assets/images/avatar-nathan-peterson.webp",
     "group": "5 end-game strategies to increase your win rate",
     "read": true,
@@ -55,10 +55,10 @@
   {
     "firstName": "Anna",
     "secondName": "Kim",
-    "notificationType": "left the group",
+    "action": "left the group",
     "image": "./assets/images/avatar-anna-kim.webp",
     "group": "Chess Club",
-    "read": true,
+    "read": false,
     "timestamp": "2 weeks ago"
   }
 ]

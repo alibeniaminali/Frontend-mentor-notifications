@@ -44,24 +44,31 @@ a:hover {
 }
 
 body {
-  /* width: 100vw; */
-  /* height: 100%; */
+  background-color: var(--white);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 14px;
-  /* padding-top: 20px; */
 }
 
 main {
-  /* width: 100%; */
   max-width: 700px;
-  /* height: 100%; */
-  /* border: 1px solid red; */
+  background-color: var(--white);
   padding: 30px 25px;
-  border-radius: 15px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
+footer {
+  padding: 20px;
+  color: var(--very-dark-blue-lighter);
+  border-top: 1px solid var(--light-grayish-blue-2);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 .notifications {
   display: flex;
   justify-content: space-between;
@@ -76,7 +83,6 @@ main {
 }
 
 h1 {
-  /* font-size: 1.5rem; */
   color: var(--very-dark-blue-lighter);
   display: flex;
   align-items: center;
@@ -103,17 +109,12 @@ button:hover {
   font-weight: var(--bold);
 }
 
-/* TODO: On desktop align-items to be center */
 .notifications__content__card {
   padding: 15px;
-  /* border: 1px solid red; */
   border-radius: 10px;
   display: flex;
   gap: 15px;
   cursor: pointer;
-  /* justify-content: center; */
-  /* width: 100%; */
-  /* align-items: center; */
 }
 
 .notifications__content__card img {
@@ -154,13 +155,59 @@ button:hover {
 }
 
 .message {
-    margin-top: 5px;
-    border: 1px solid var(--light-grayish-blue-1);
-    border-radius: 5px;
-    padding: 15px;
-    color: var(--very-dark-blue-lighter);
+  margin-top: 5px;
+  border: 1px solid var(--light-grayish-blue-1);
+  border-radius: 5px;
+  padding: 15px;
+  color: var(--very-dark-blue-lighter);
+  position: relative;
+}
+
+.message::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--white);
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  top: -6px;
+  transform: rotate(45deg);
+  transform: rotate(315deg);
+  border: 1px solid #000;
+  border-color: var(--light-grayish-blue-1) var(--light-grayish-blue-1)
+    transparent transparent;
+}
+
+.message:hover {
+  background-color: var(--light-grayish-blue-1);
+  color: var(--dark-grayish-blue-lighter);
+}
+
+.message:hover::before {
+  background-color: inherit;
 }
 
 .hidden {
-    display: none;
+  display: none;
+}
+
+.has-image {
+  grid-template-columns: 50px auto 50px;
+  display: grid;
+}
+
+@media only screen and (min-width: 700px) {
+  body {
+    background-color: var(--very-light-grayish-blue);
+    height: 100vh;
+  }
+
+  main {
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 20px 1px rgb(215 214 215 / 63);
+    -moz-box-shadow: 0px 0px 20px 1px rgb(215 214 215 / 63);
+    box-shadow: 0px 0px 20px 1px rgb(215 214 215 / 63);
+    border-top: none;
+  }
 }
