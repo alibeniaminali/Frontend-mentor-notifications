@@ -162,13 +162,13 @@ button:hover {
 
 .message {
   margin-top: 5px;
-  border: 1px solid var(--light-grayish-blue-1);
+  border: 1px solid var(--light-grayish-blue-2);
   border-radius: 5px;
   padding: 15px;
   color: var(--very-dark-blue-lighter);
   position: relative;
 }
-
+/* hsl(211deg 47.8% 83.24%) */
 .message::before {
   content: '';
   width: 10px;
@@ -181,7 +181,7 @@ button:hover {
   transform: rotate(45deg);
   transform: rotate(315deg);
   border: 1px solid #000;
-  border-color: var(--light-grayish-blue-1) var(--light-grayish-blue-1)
+  border-color: var(--light-grayish-blue-2) var(--light-grayish-blue-2)
     transparent transparent;
 }
 
