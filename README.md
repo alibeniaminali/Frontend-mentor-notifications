@@ -40,7 +40,7 @@ Additional functionality and styling that I've added :
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/html-css-and-javascript-kUW-5eaibc)
-- Live Site URL: [Deployed on GitHub pages](https://alibeniaminali.github.io/Frontend-mentor-rating/)
+- Live Site URL: [Deployed on GitHub pages](https://alibeniaminali.github.io/Frontend-mentor-notifications/)
 
 ## My process
 
@@ -54,60 +54,12 @@ The component renders with a disabled submit input. Once the user has selected a
 - CSS Grid
 - Mobile-first workflow
 - JavaScript
+- JSON
 
 ### What I learned
 
-1. Working with forms and input types
-2. Practiced DOM manipulation, styling with CSS and JavaScript
-3. Added a vibration using `Navigator: vibrate()` method if the device has a vibration hardware
-4. To work with different CSS pseudo-classes, such as `:not` `:is:` `:last-child()` and others
-
-- I came up with a nice solution to toggle the background color of the label if the input inside is checked.
-
-```css
-label:has(input:checked) {
-  background-color: var(--orange);
-  color: var(--white);
-}
-```
-
-- Added a vibration using `Navigator: vibrate()` method if the device has a vibration hardware
-```js
-function handleSubmit(event) {
-  event.preventDefault()
-  for (let i = 0; i < ele.length; i++) {
-    if (ele[i].checked) {
-      document.getElementById('rate').innerHTML = ele[i].value
-    }
-  }
-  formCard.remove()
-  responseCard.style.display = 'block'
-  if (navigator.vibrate) {
-      window.navigator.vibrate(40)
-    }
-}
-```
-- Work with different CSS pseudo-classes, such as `:not` `:is:` `:last-child()` and others
-```css
-.card--response p:nth-child(2) {
-  color: var(--orange-light);
-  padding: 8px;
-  border-radius: 30px;
-  background-color: var(--dark-blue);
-}
-
-input:is([type='submit']) {
-  width: 100%;
-  border-radius: 20px;
-  padding: 10px;
-  text-transform: uppercase;
-  color: var(--white);
-  background-color: var(--orange);
-  letter-spacing: 2px;
-  cursor: pointer;
-  border: none;
-}
-```
+1. Practiced DOM manipulation, styling with CSS and JavaScript
+2. Practiced working with json files and conditional rendering
 
 ### Continued development
 
