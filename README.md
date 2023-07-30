@@ -39,7 +39,7 @@ Additional functionality and styling that I've added :
 - Most of the content is not hard coded inside the HMTL, instead I created a data.json file and dynamically added the content
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/html-css-and-javascript-kUW-5eaibc)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/html-css-grid-javascript-json-TlJQH5xI89)
 - Live Site URL: [Deployed on GitHub pages](https://alibeniaminali.github.io/Frontend-mentor-notifications/)
 
 ## My process
