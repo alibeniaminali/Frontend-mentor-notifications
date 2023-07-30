@@ -4,12 +4,11 @@
 
 Desktop:
 
-![Screenshot 2023-07-30 at 18 40 15](https://github.com/alibeniaminali/Frontend-mentor-notifications/assets/94930059/63712c9f-5552-49d2-857e-4b272955de24)
+![Screenshot 2023-07-30 at 19 29 08](https://github.com/alibeniaminali/Frontend-mentor-notifications/assets/94930059/ef7ab4fb-ee16-4462-a9ff-84639a13b4a6)
 
 Mobile:
 
-![Screenshot 2023-07-30 at 18 41 19](https://github.com/alibeniaminali/Frontend-mentor-notifications/assets/94930059/15ff3f2e-f754-438c-867c-22d952e9ff71)
-
+![Screenshot 2023-07-30 at 19 29 53](https://github.com/alibeniaminali/Frontend-mentor-notifications/assets/94930059/b1499fde-f9a9-456a-ad0f-e978b35b2476)
 
 ## Table of contents
 
