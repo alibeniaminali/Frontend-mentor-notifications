@@ -30,6 +30,12 @@
   --font-family: 'Plus Jakarta Sans', sans-serif;
   --bold: 500;
   --bolder: 800;
+
+  --padding-righ: 2px;
+}
+
+.pr {
+  padding-right: var(--padding-righ);
 }
 
 a {

@@ -9,9 +9,9 @@ function init() {
   let view = ''
   data.forEach((item) => {
     const div = `
-        <div class="notifications__content__card ${item.actionPicture ? 'has-image' : ''} ${
-          !item.read ? 'unread-background' : ''
-        }">
+        <div class="notifications__content__card ${
+          item.actionPicture ? 'has-image' : ''
+        } ${!item.read ? 'unread-background' : ''}">
             <div class="notifications__content__card__image">
                 <img src="${item.image}" alt="Picture of ${item.firstName} ${
       item.secondName
@@ -19,19 +19,15 @@ function init() {
             </div>
           <div class="notifications__content__card__content">
             <div>
-                <a href="#" class="user-name">${item.firstName} ${
+                <a href="#" class="user-name pr">${item.firstName} ${
       item.secondName
     }</a> 
-                <span class="notification-type">${item.action}</span> 
-                <a href="#" class="group">${item.group ? item.group : ''}</a> 
+                <span class="notification-type pr">${item.action}</span> 
+                <a href="#" class="group pr">${item.group ? item.group : ''}</a> 
                 <span class="${!item.read ? 'unread' : ''}"></span>
             </div>
             <p class="timestamp">${item.timestamp}</p>
-            ${
-              item.message
-                ? `<p class="message">${item.message}</p>`
-                : ''
-            }     
+            ${item.message ? `<p class="message">${item.message}</p>` : ''}     
           </div>
 					${item.actionPicture ? `<img src="${item.actionPicture}" alt="chess" />` : ''}
         </div>
