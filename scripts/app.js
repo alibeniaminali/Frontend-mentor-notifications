@@ -27,9 +27,14 @@ function init() {
       </div>
     `
     view += div
-    if (!item.read) {
-      count++
-    }
+    // Before
+    // if (!item.read) {
+    //   count++
+    // }
+
+    // After
+    // Short-circuit conditional
+    !item.read && count++
   })
 
   notificationsContent.innerHTML += view
