@@ -3,29 +3,21 @@ import data from '../data.js'
 function init() {
   const notificationsContent = document.querySelector('.notifications__content')
   const numberOfNotifications = document.querySelector('.notifications__number')
-  const markAsRead = document.querySelector('.notifications__button')
-  
+  const markAsUnread = document.querySelector('.notifications__button')
+
   let count = 0
   let view = ''
   data.forEach((item) => {
     const div = `
-      <div class="notifications__content__card ${
-        item.actionPicture ? 'has-image' : ''
-      } ${!item.read ? 'unread-background' : ''}">
+      <div class="notifications__content__card ${item.actionPicture ? 'has-image' : ''} ${!item.read ? 'unread-background' : ''}">
         <div class="notifications__content__card__image">
-          <img src="${item.image}" alt="Picture of ${item.firstName} ${
-      item.secondName
-    }" />
+          <img src="${item.image}" alt="Picture of ${item.firstName} ${item.secondName}" />
         </div>
         <div class="notifications__content__card__content">
           <div>
-            <a href="#" class="user-name pr">${item.firstName} ${
-      item.secondName
-    }</a> 
+            <a href="#" class="user-name pr">${item.firstName} ${item.secondName}</a> 
             <span class="notification-type pr">${item.action}</span> 
-            ${
-              item.group ? `<a href="#" class="group pr">${item.group}</a>` : ''
-            }
+            ${item.group ? `<a href="#" class="group pr">${item.group}</a>` : ''}
             <span class="${!item.read ? 'unread' : ''}"></span>
           </div>
           <p class="timestamp">${item.timestamp}</p>
@@ -47,7 +39,6 @@ function init() {
 
   notificationsContent.innerHTML += view
   numberOfNotifications.innerHTML = count
-  const unreadNotification = document.querySelectorAll('.unread')
   const unreadNotifications = document.querySelectorAll('.unread-background')
   unreadNotifications.forEach((card) => {
     card.addEventListener('click', () => {
@@ -61,30 +52,29 @@ function init() {
     }
   }
 
-  function removeUnreadDot() {
-    for (let i = 0; i < unreadNotification.length; i++) {
-      unreadNotification[i].remove()
-    }
-  }
-
-  function markAllAsRead() {
-    // Setting the number of notifications down to 0 when the user clicks "Mark all as read" button
+  function markAllAsUnread() {
     numberOfNotifications.innerHTML = 0
-    // Removing the background color of all unread notifications when the user clicks "Mark all as read" button
     for (let i = 0; i < notificationsContent.children.length; i++) {
-      notificationsContent.children[i].classList.remove('unread-background')
+      if (
+        notificationsContent.children[i].classList.contains('unread-background')
+      ) {
+        notificationsContent.children[i].classList.remove('unread-background')
+      }
     }
-    // Removing the span (red dot) for unread messages when the user clicks "Mark all as read" button
-    removeUnreadDot()
+
+    for (let i = 0; i < unreadNotification.length; i++) {
+      unreadNotification[i].classList.contains('unread')
+        ? unreadNotification[i].remove()
+        : ''
+    }
   }
 
-  // Toggle (show/hide) message on click
   const messageParagraph = document.querySelector('.message')
   messageParagraph.parentElement.parentElement.addEventListener('click', () => {
     messageParagraph.classList.toggle('hidden')
   })
 
-  
+  const unreadNotification = document.querySelectorAll('.unread')
   unreadNotification.forEach((notification) => {
     notification.parentElement.parentElement.parentElement.addEventListener(
       'click',
@@ -94,7 +84,7 @@ function init() {
       }
     )
   })
-  markAsRead.addEventListener('click', markAllAsRead)
+  markAsUnread.addEventListener('click', markAllAsUnread)
 }
 
 window.addEventListener('DOMContentLoaded', init)
