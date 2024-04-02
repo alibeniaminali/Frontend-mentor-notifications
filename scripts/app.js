@@ -23,7 +23,7 @@ function init() {
             <span class="${!item.read ? 'unread' : ''}"></span>
           </div>
           <p class="timestamp">${item.timestamp}</p>
-          ${item.message ? `<p class="message">${item.message}</p>` : ''}     
+          ${item.message ? `<p class="message hidden">${item.message}</p>` : ''}     
         </div>
 					${item.actionPicture ? `<img src="${item.actionPicture}" alt="chess" />` : ''}
       </div>
